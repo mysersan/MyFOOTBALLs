@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Info Klub</title>
+    <meta name="description" content="PWA MyFOOTBALLs" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#f3e5f5" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  
+  <body>
+    <!-- Membuat navbar sticky ketika scrolling -->
+    <div class="navbar-fixed">
+      <!-- Navigasi -->
+      <nav class="pink darken-4" role="navigation">
+        <div class="nav-wrapper container">
+          <a class="hide-on-small-only" href="#" class="brand-logo" id="logo-container">Detail Club</a>
+          <a href="./index.html" class="sidenav-trigger" data-target="nav-mobile">
+            <i class="material-icons">arrow_back</i>
+          </a>
+          <ul class="topnav right hide-on-med-and-down"></ul>
+          <ul class="sidenav" id="nav-mobile"></ul>
+        </div>
+      </nav>
+    </div>
+    <!-- Akhir Navigasi -->
+    <div class="center-align" id="loader"></div>
+    <div class="container" id="body-content"></div>
+
+    <div id="save" class="fixed-action-btn">
+        <a class="btn-floating pulse btn-large pink accent-3">
+          <i class="large material-icons">star_border</i>
+        </a>
+    </div>
+    
+    <div id="tombol_delete" class="fixed-action-btn">
+      <a class="btn-floating pulse btn-large pink accent-3">
+        <i class="large material-icons">star</i>
+      </a>
+    </div>
+
+    <script type="text/javascript" src="https://unpkg.com/snarkdown@1.0.2/dist/snarkdown.umd.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/api.js"></script>
+
+    <script src="js/idb.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/team.js"></script>
+  </body>
+</html>

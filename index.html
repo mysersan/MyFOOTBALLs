@@ -1,130 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+	  <meta charset="UTF-8" />
+	  <title>PWA MyFOOTBALLs</title>
+	  <meta name="description" content="PWA MyFOOTBALLs" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="css/materialize.min.css">
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <link rel="apple-touch-icon" href="/custom_icon.png">
 
-<head>
-  <meta charset="UTF-8" />
-  <title>PWA MyFOOTBALLs</title>
-  <meta name="description" content="PWA MyFOOTBALLs" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/materialize.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="apple-touch-icon" href="/custom_icon.png">
-
-  <!-- Mendaftarkan Web App Manifest -->
-  <link rel="manifest" href="/manifest.json">
-  <meta name="theme-color" content="#880e4f" />
-  
-  <!-- CSS -->
+	  <!-- Mendaftarkan Web App Manifest -->
+	  <link rel="manifest" href="/manifest.json">
+	  <meta name="theme-color" content="#f3e5f5" />
+	  
+	  <!-- CSS -->
   <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
       crossorigin="anonymous"
   />
-</head>
-
-<body>
-  <!-- Navigasi -->
+  </head>
+  <body>
+    <!-- Navigasi -->
   <nav class="pink darken-4" role="navigation">
     <div class="nav-wrapper container">
       <a href="#" class="brand-logo" id="logo-container">MyFOOTBALLs</a>
       <a href="#" class="sidenav-trigger" data-target="nav-mobile"><i class="material-icons">menu</i></a>
-
       <ul class="topnav right hide-on-med-and-down">
-
       </ul>
       <ul class="sidenav" id="nav-mobile"></ul>
     </div>
   </nav>
   <!-- Akhir Navigasi -->
   <div class="container" id="body-content">
-
-
   </div>
-  <script src="js/materialize.min.js"></script>
-  <script src="js/nav.js"></script>
-  <script src="js/match.js"></script>
-  <!-- Fungsi getKlasemenLiga hanya bisa dipanggil apabila sudah di impor ke halaman ini -->
-  <script src="js/api.js"></script>
-
-  <script src="js/standings.js"></script>
-  <script src="js/teamFav.js"></script>
-  <script src="js/playerFav.js"></script>
-  <script src="js/matchFav.js"></script>
-  <script src="js/indexeddb.js"></script>
-
-  <script src="js/database.js"></script>
-  <script src="js/idb.js"></script>
-  <script src="js/helper.js"></script>
-
-  <script>
-    // REQUEST API UNTUK PERTAMA KALI
-    document.addEventListener("DOMContentLoaded", function () {
-      var page = window.location.hash.substr(1);
-    });
-  </script>
-
-  <!-- Mendaftarkan Service Worker -->
-  <script type="text/javascript">
-    // Periksa service worker
-    if (!('serviceWorker' in navigator)) {
-      console.log("Service worker tidak didukung browser ini.");
-    } else {
-      registerServiceWorker();
-      requestPermission();
-    }
-    // Register service worker
-    function registerServiceWorker() {
-      return navigator.serviceWorker.register("/service-worker.js")
-        .then(function (registration) {
-          console.log('Registrasi service worker berhasil.');
-          return registration;
-        })
-        .catch(function (err) {
-          console.error('Registrasi service worker gagal.', err);
-        });
-    }
-
-    function requestPermission() {
-      if ('Notification' in window) {
-        Notification.requestPermission().then(function (result) {
-          
-
-          if (('PushManager' in window)) {
-        navigator.serviceWorker.getRegistration().then(function(registration) {
-            registration.pushManager.subscribe({
-                userVisibleOnly: true,
-                applicationServerKey: urlBase64ToUint8Array("BDCy4G-uE9pP4EhnoauuJiUeMC85UqEJwlrh-S73SEitM7akW_1k6xJ4HGqnlwAsmb5M-T8HciGJqBZVEn70u40","privateKey")
-            }).then(function(subscribe) {
-                console.log('Berhasil melakukan subscribe dengan endpoint: ', subscribe.endpoint);
-                console.log('Berhasil melakukan subscribe dengan p256dh key: ', btoa(String.fromCharCode.apply(
-                    null, new Uint8Array(subscribe.getKey('p256dh')))));
-                console.log('Berhasil melakukan subscribe dengan auth key: ', btoa(String.fromCharCode.apply(
-                    null, new Uint8Array(subscribe.getKey('auth')))));
-            }).catch(function(e) {
-                console.error('Tidak dapat melakukan subscribe ', e.message);
-            });
-        });
-    }
-
-    function urlBase64ToUint8Array(base64String) {
-        const padding = '='.repeat((4 - base64String.length % 4) % 4);
-        const base64 = (base64String + padding)
-            .replace(/-/g, '+')
-            .replace(/_/g, '/');
-        const rawData = window.atob(base64);
-        const outputArray = new Uint8Array(rawData.length);
-        for (let i = 0; i < rawData.length; ++i) {
-            outputArray[i] = rawData.charCodeAt(i);
-        }
-        return outputArray;
-    }
-
-        });
-      }
-    }
-  </script>
-
-</body>
-
+  <div class="center-align" id="loader"></div>
+  
+    <script src="js/materialize.min.js"></script>
+    <script src="js/idb.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/match.js"></script>
+    <script src="js/api.js"></script>
+    
+    <script src="js/sw.js"></script>
+    <script src="js/time.js"></script>
+    
+  </body>
 </html>
