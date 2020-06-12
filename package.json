@@ -1,0 +1,14 @@
+{
+  "name": "myfootballs",
+  "version": "2.0.1",
+  "description": "",
+  "main": "push.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "web-push": "^3.4.4"
+  }
+}

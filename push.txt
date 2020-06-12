@@ -1,6 +1,7 @@
-{"publicKey":"BDCy4G-uE9pP4EhnoauuJiUeMC85UqEJwlrh-S73SEitM7akW_1k6xJ4HGqnlwAsmb5M-T8HciGJqBZVEn70u40","privateKey":"bXP1Btws1l__-b7THTtdV1kM2tAE-eTbnSik0w6mC3g"}
+"publicKey": "BIWnrhlLEssn8vFTA6Ld0x2EKQIzcwy9jXRIzmeYg0WnO3EOmAIF2ozkt-rW7NmCIDZtxcA_ZMKqFI8Pb_Oh_hM",
+   "privateKey": "VKzR_gklswofZSNgW59TpfN2Zo0QoOGMXyQ7Qxfw5gw"
 
-Berhasil melakukan subscribe dengan endpoint:  https://fcm.googleapis.com/fcm/send/e9SLmOYLpFM:APA91bHwKtKpjcKq0sZkXfKPElS4Amtxk9DUFiG32-PbBVyxbAUcx6R-q5S6x55guN5RrN_LrIzg60NszCYOS7NzCPumBjIqQZm-Ux4JGh9KB43Usjup1vAYiWsdcPdi0PBbcYp-r2PL
-sw.js:37 Berhasil melakukan subscribe dengan endpoint:  https://fcm.googleapis.com/fcm/send/e9SLmOYLpFM:APA91bHwKtKpjcKq0sZkXfKPElS4Amtxk9DUFiG32-PbBVyxbAUcx6R-q5S6x55guN5RrN_LrIzg60NszCYOS7NzCPumBjIqQZm-Ux4JGh9KB43Usjup1vAYiWsdcPdi0PBbcYp-r2PL
-sw.js:38 Berhasil melakukan subscribe dengan p256dh key:  BPLxFFQ5ZtaX3R29xPiuqcrinw31Jzp7y2znUguIZVjdwJDK3yznFprJ8T8XwcPRSXiP3O3qbncoxkNgTv5KbEU=
-sw.js:40 Berhasil melakukan subscribe dengan auth key:  IQs+yqZ6cA3vqVaMUnbUIg==
+"endpoint": "https://fcm.googleapis.com/fcm/send/fD-XQnc1VSk:APA91bEaadObqi6zsII_hfWgv5Wsl04jHMRQKOwqztzlAGYxDXgTmhfCgGE0saiKyU7rRl3Cmj-Q-_OluDxQkfA5-gO0hIsDzDUrmD9FDlh2Km5h8ibha-HRicxNBaq5pDo6ig4thSSE",
+   "keys": {
+       "p256dh": "BNHQ4sMTEbJO3LLQVZ5ixKsTBL/SlTophwMvwfJjuUwSJ0SsJRE3fpKVtTVZHGe+Hs5p95NmYlxk4gZ1Do7Znuk=",
+       "auth": "v3lNUwX6ohrShOIw7CsMlw=="
