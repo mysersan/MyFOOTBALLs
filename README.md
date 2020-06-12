@@ -1,2 +1,2 @@
 # MyFOOTBALLs
-MyFOOTBALLs Submission 2 Dicoding Rev 2
+MyFOOTBALLs Submission 2 PWA Dicoding Rev 2
