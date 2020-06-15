@@ -30,9 +30,14 @@ if (workbox) {
     { url: '/img/icon/icon.png', revision: '1' },
     { url: '/img/icon/judul.png', revision: '1' },
     { url: '/img/icon/notif.png', revision: '1' },
-    { url: '/"https://unpkg.com/snarkdown@1.0.2/dist/snarkdown.umd.js', revision: '1' },
-  ]);
+    { url: '"https://unpkg.com/snarkdown@1.0.2/dist/snarkdown.umd.js', revision: '1' },
+  ],
+  {
+    // Ignore all URL parameters.
+  ignoreUrlParametersMatching: [/.*/]
+  });
 
+  
   workbox.routing.registerRoute(
     /.*(?:png|gif|jpg|jpeg|svg|webp)$/,
     workbox.strategies.cacheFirst({
