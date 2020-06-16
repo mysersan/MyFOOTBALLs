@@ -22,7 +22,7 @@ window.onload = function() {
             });
     } else {
         myLiffId = defaultLiffId;
-        initializeLiffOrDie(myLiffId);
+
     }
 };
 
@@ -30,7 +30,7 @@ window.onload = function() {
 * Check if myLiffId is null. If null do not initiate liff.
 * @param {string} myLiffId The LIFF ID of the selected element
 */
-function initializeLiffOrDie(myLiffId) {
+
     if (!myLiffId) {
         document.getElementById("liffAppContent").classList.add('hidden');
         document.getElementById("liffIdErrorMessage").classList.remove('hidden');
@@ -43,7 +43,7 @@ function initializeLiffOrDie(myLiffId) {
 * Initialize LIFF
 * @param {string} myLiffId The LIFF ID of the selected element
 */
-function initializeLiff(myLiffId) {
+
     liff
         .init({
             liffId: myLiffId
