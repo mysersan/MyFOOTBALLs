@@ -20,6 +20,7 @@ if (workbox) {
     { url: '/index.html', revision: '1' },
     { url: '/manifest.json', revision: '1' },
     { url: '/nav.html', revision: '1' },
+	{ url: '/liff.html', revision: '1' },
     { url: '/team.html', revision: '1' },
     { url: '/team_favorite.html', revision: '1' },
     { url: '/pages/contact.html', revision: '1' },
