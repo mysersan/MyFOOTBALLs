@@ -37,7 +37,7 @@ window.onload = function() {
     } else {
         initializeLiff(myLiffId);
     }
-}
+
 
 /**
 * Initialize LIFF
