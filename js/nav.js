@@ -60,7 +60,14 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if (this.status == 404) {
           content.innerHTML = "<p>Halaman tidak ditemukan.</p>";
         } else {
-          content.innerHTML = "<p>Ups.. halaman tidak dapat diakses.</p>";
+          content.innerHTML = "div class="card">
+  <div class="card-image waves-effect waves-block waves-light purple lighten-5">
+    <img class="activator" src="img/icon/judul.png">
+  </div>
+  <div class="card-content">
+    <span class="card-title activator grey-text text-darken-4"><h4>Home<a href="#home"><i class="material-icons right">autorenew</i></a></h4></span>
+  </div> 		
+</div> ";
         }
       }
 
