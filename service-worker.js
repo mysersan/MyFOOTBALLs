@@ -6,6 +6,7 @@ if (workbox) {
   workbox.precaching.precacheAndRoute([
     { url: '/', revision: '1' },
     { url: '/css/materialize.min.css', revision: '1' },
+	{ url: '/js/liff-starter.js', revision: '1' },
     { url: '/js/api.js', revision: '1' },
     { url: '/js/db.js', revision: '1' },
     { url: '/js/idb.js', revision: '1' },
