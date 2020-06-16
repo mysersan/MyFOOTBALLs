@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if (this.status == 404) {
           content.innerHTML = "<p>Halaman tidak ditemukan.</p>";
         } else {
-          content.innerHTML = "<p><img class="activator" src="img/icon/judul.png"></p> ";
+          content.innerHTML = "<p>Ups.. halaman tidak dapat diakses.</p>";
         }
       }
 
