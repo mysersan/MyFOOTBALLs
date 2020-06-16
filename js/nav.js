@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if (this.status == 404) {
           content.innerHTML = "<p>Halaman tidak ditemukan.</p>";
         } else {
-          content.innerHTML = "div class="card">
+          content.innerHTML = "<div class="card">
   <div class="card-image waves-effect waves-block waves-light purple lighten-5">
     <img class="activator" src="img/icon/judul.png">
   </div>
