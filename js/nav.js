@@ -53,6 +53,8 @@ document.addEventListener("DOMContentLoaded", function() {
           getSavedFavoriteTeam();
         } else if (page === "match") {
           getMatchByIdLeague();
+        } else if ( === "liff") {
+          getKlasemen();
         }
 
         if (this.status == 200) {
