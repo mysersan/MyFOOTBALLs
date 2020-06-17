@@ -1,7 +1,7 @@
 # MyFOOTBALLs
-MyFOOTBALLs Submission PWA Dicoding Support Line Front-End Framework
+MyFOOTBALLs Submission Progressive Web Apps (PWA) Dicoding Support LINE Front-End Framework (LIFF)
 
-# get akses 
+# Get akses List :
 # Heroku : https://myfootballs.herokuapp.com
 # Firebase : https://myfootballs-de0a8.web.app/
 # LINE : line://app/1654349110-Z8mbrQqa
