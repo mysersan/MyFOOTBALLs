@@ -1,12 +1,12 @@
-var kode_liga = 2021
-var base_url = "https://api.football-data.org/v2/";
-var endpoint_tim = `${base_url}teams/`
-var endpoint_klasemen = `${base_url}competitions/${kode_liga}/standings`
-var endpoint_pertandingan_upcoming = `${base_url}competitions/${kode_liga}/matches?status=SCHEDULED`
-var endpoint_pertandingan_detail = `${base_url}matches/`
-var api_token = '6d3cb6ab6f474f188c188f4a040c49c1'
+const kode_liga = 2021
+const base_url = "https://api.football-data.org/v2/";
+const endpoint_tim = `${base_url}teams/`
+const endpoint_klasemen = `${base_url}competitions/${kode_liga}/standings`
+const endpoint_pertandingan_upcoming = `${base_url}competitions/${kode_liga}/matches?status=SCHEDULED`
+const endpoint_pertandingan_detail = `${base_url}matches/`
+const api_token = '6d3cb6ab6f474f188c188f4a040c49c1'
 
-var fetchApi = url => {
+const fetchApi = url => {
   return fetch(url, {
     headers: {
       'X-Auth-Token': api_token
@@ -203,7 +203,7 @@ function getSavedFavoriteTeam() {
     // Menampilkan data favorite team
     var teamHTML = `<div class="card">
     <div class="card-image waves-effect waves-block waves-light purple lighten-5">
-      <img class="activator" src="img/icon/covid19.png">
+      <img class="activator" src="img/icon/covid19.png" alt="Covid19">
     </div>
     <div class="card-content">
     <p>Shareholders discussed season return, financial help to clubs and to NHS in fighting coronavirus and aid to EFL and National League clubs. <a href="https://www.premierleague.com/news/1651836"><b> @premierleague.com</b></a></p>
