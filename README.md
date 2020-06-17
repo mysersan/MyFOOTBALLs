@@ -1,6 +1,10 @@
 # MyFOOTBALLs
 MyFOOTBALLs Submission Progressive Web Apps (PWA) Dicoding Support LINE Front-End Framework (LIFF)
 
+PWA MyFootBalls telah di improve dengan fitur LIFF di mana pengguna juga dapat mengakses PWA tersebut dari aplikasi chating LINE tanpa harus keluar dari obrolan maupun aplikasi LINE tersebut.
+
+ketikkan link ini pada jendela obrolan LINE "line://app/1654349110-Z8mbrQqa" (tanpa tanda kutip dua) lalu kirim dan klik link tersebut maka akan muncul jendela aplikasi PWA MyFootballs pada obrolan anda.
+
 # Get akses List :
 # Heroku : https://myfootballs.herokuapp.com
 # Firebase : https://myfootballs-de0a8.web.app/
