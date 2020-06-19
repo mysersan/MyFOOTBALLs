@@ -9,7 +9,7 @@ MyFOOTBALLs Submission Progressive Web Apps (PWA) Dicoding Support LINE Front-En
 6. Memiliki Splash screen 
 7. Kode pada Service Worker yang berbasis Workbox 
 8. Dapat diunggah ke Firebase Hosting atau Github Pages 
-9. Menggunakan Fitur LIFF (Line Front-End Framework) yang dapat di akses di obrolan aplikasi chating LINE tanpa harus keluar dari jendela obrolan ataupun aplikasi LINE
+9. Menggunakan fitur LIFF (Line Front-End Framework) yang dapat di akses di obrolan aplikasi chating LINE tanpa harus keluar dari jendela obrolan ataupun aplikasi LINE
 
 PWA MyFootBalls telah di improve dengan fitur LIFF di mana pengguna juga dapat mengakses PWA tersebut dari aplikasi chating LINE tanpa harus keluar dari obrolan maupun aplikasi LINE tersebut.
 
