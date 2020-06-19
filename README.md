@@ -1,7 +1,7 @@
 # MyFOOTBALLs
 MyFOOTBALLs Submission Progressive Web Apps (PWA) Dicoding Support LINE Front-End Framework (LIFF)
 
-1. Menampilkan halaman yang mengonsumsi data dari website API football-data.org 
+1. Menampilkan halaman yang mengkonsumsi data dari website API football-data.org 
 2. Tetap bisa dipakai meskipun status sedang offline (menerapkan cache) 
 3. Memiliki fitur penyimpanan data dengan indexed db (bisa menambahkan, menampilkan, dan menghapus tim favorit, ) dengan satu halaman khusus untuk menampilkan data yang disimpan 
 4. Dapat menampilkan pesan push dari server (untuk simulasi pesan push dikirim menggunakan Firebase Cloud Messaging) 
